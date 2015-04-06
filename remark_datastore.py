@@ -25,7 +25,7 @@ def ReadRemarks(user_id):
       Remark.timestamp >= start_time).order(Remark.timestamp).fetch():
     user = remark.user
     text = remark.text
-    color = 'black'  # TODO(pep-students) Make messages appear a random color.
+    color = 'blue'  # TODO(pep-students) Make messages appear a random color.
     remark_infos.append((user, text, color))
   return remark_infos
 
